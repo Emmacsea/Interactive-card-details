@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Work Sans";
+}
+
+.container .img {
+    width: 26%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .card {
+    position: fixed;
+    padding: 3em 6em;
+    margin-top: 4em;
+    color: hsl(0, 0%, 100%);
+    font-family: "Work Sans";
+}
+
+.card img {
+    width: 380px;
+    height: 200px;
+    margin-bottom: 1.4em;
+    position: relative;
+}
+
+.card .card-front {
+    padding: 1.3em 1.3em 0;
+    
+}
+
+.card-front .circle {
+    position: absolute;
+    width: 55px;
+    height: 32px;
+    top: 70px;
+    left: 130px;
+}
+
+.card-front .numb{
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    right: 20%;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+}
+
+.card-front .name {
+    position: absolute;
+    top: 200px;
+    right: 271px;
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    gap: 130px;
+    font-size: .7em;
+    text-transform: uppercase;
+}
+
+.card-front .name span {
+    margin-right: -20px;
+}
+
+.card .card-back {
+    margin-left: 4.3em;
+}
+
+.card-back .num {
+    position: absolute;
+    top: 67.6%;
+    left: 73%;
+    font-size: .9em;
+}
+
+.container .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 15em;
+    /* display: none; */
+}
+
+.details form {
+    width: 500px;
+    align-self: center;
+}
+
+.details .card-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 1.2em;
+}
+
+.for {
+    font-size: 1.01em;
+    font-weight: 400;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    margin-bottom: .3em;
+}
+
+.input {
+    width: 80%;
+    outline: none;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: .5em;
+    padding: .7em 1em;
+    color: hsl(278, 68%, 11%);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.input:focus {
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+.input::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+.details .card-det {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.date .f {
+    font-size: 1.01em;
+    font-weight: 400;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.date .label-input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.label-input .t {
+    width: 35%;   
+    outline: none; 
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: .5em;
+    padding: .7em 1em;
+    color: hsl(278, 68%, 11%);
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: .3em;
+}
+
+.t::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+.t:focus {
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+.card-det .date, .cvc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvc .in {
+    width: 100%;
+    outline: none;
+    padding: .7em 1em;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: .5em;
+    color: hsl(278, 68%, 11%);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.in::placeholder {
+    color: hsl(270, 3%, 87%);
+}
+
+.in:focus {
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+.cvc .o {
+    font-size: 1.01em;
+    font-weight: 400;
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    margin-bottom: .3em;
+    align-self: flex-start;
+}
+
+.details input[type="button"] {
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 1.2em;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    font-family: "Work Sans";
+    border-radius: .6em;
+    margin-top: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.container .confirm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15em;
+    gap: 10px;
+    font-family: "Work Sans";
+    /* visibility: hidden; */
+    display: none;
+}
+
+.confirm img {
+    width: 55px;
+    height: auto;
+}
+
+.confirm h2 {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: hsl(278, 68%, 11%);
+    margin-top: .3em;
+}
+
+.confirm p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: hsl(279, 6%, 55%);
+}
+
+.confirm button {
+    width: 50%;
+    outline: none;
+    border: none;
+    padding: .7em 1.4em;
+    background: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    align-items: center;
+    font-family: "Work Sans";
+    border-radius: .6em;
+    margin-top: 2em;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .container #complete {
+    display: none;
+} */
+
+.card-details .d {
+    margin: .8em 0 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.e {
+
+    align-self: flex-start;
+    margin: .8em 0 0;
+    font-size: 1em;
+    font-weight: 500;
+}

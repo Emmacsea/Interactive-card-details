@@ -232,6 +232,7 @@
 
 .container .confirm {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,8 +240,7 @@
     padding: 0 15em;
     gap: 10px;
     font-family: "Work Sans";
-    /* visibility: hidden; */
-    display: none;
+    
 }
 
 .confirm img {
@@ -294,4 +294,9 @@
     margin: .8em 0 0;
     font-size: 1em;
     font-weight: 500;
+}
+
+.container .disp {
+    display: none;
+    /* visibility: hidden; */
 }

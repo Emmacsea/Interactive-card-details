@@ -17,6 +17,11 @@ const submit = document.body.querySelector("#submit");
 const contiune = document.body.querySelector("#det");
 const complete = document.body.querySelector("#complete")
 
+const card = document.body.querySelector(".details");
+
+const completeSubmit = document.body.querySelector("#cSubmit");
+
+
 submit.addEventListener("click", () => {
     // if (name.value === ""){
     //     dMessage.textContent = `Input box cannot be empty`;
@@ -56,10 +61,14 @@ submit.addEventListener("click", () => {
     //     complete.classList = ``
     // }
 
-    contiune.classList = "disp"
-    complete.classList = ``
+    complete.className = "confirm"
+    card.className = "disp"
 
     
 
 })
 
+completeSubmit.addEventListener('click', () => {
+    complete.className = "disp";
+    card.className = 'details'
+})
